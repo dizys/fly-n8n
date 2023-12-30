@@ -8,6 +8,10 @@ primary_region = "sjc"
 
 [build]
 
+[env]
+  SWAP = "1"
+  SWAP_SIZE = "512M"
+
 [mounts]
   source = "autoflow_data"
   destination = "/home/node/.n8n"
