@@ -9,11 +9,13 @@ primary_region = "sjc"
 [build]
 
 [env]
+  SWAP = "1"
+  SWAP_SIZE = "512M"
   WEBHOOK_URL = "https://flow.dizy.cc/"
 
 [mounts]
   source = "autoflow_data"
-  destination = "/home/node/.n8n"
+  destination = "/root/.n8n"
 
 [http_service]
   internal_port = 5678
