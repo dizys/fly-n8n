@@ -12,6 +12,7 @@ primary_region = "sjc"
   SWAP = "1"
   SWAP_SIZE = "512M"
   WEBHOOK_URL = "https://flow.dizy.cc/"
+  NODE_FUNCTION_ALLOW_EXTERNAL = "cheerio,moment"
 
 [mounts]
   source = "autoflow_data"
