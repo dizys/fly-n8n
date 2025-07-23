@@ -5,18 +5,17 @@
 
 app = "autoflow"
 primary_region = "sjc"
+swap_size_mb = 512
 
 [build]
 
 [env]
-  SWAP = "1"
-  SWAP_SIZE = "512M"
   WEBHOOK_URL = "https://flow.dizy.cc/"
   NODE_FUNCTION_ALLOW_EXTERNAL = "cheerio,moment"
 
 [mounts]
   source = "autoflow_data"
-  destination = "/root/.n8n"
+  destination = "/home/node/.n8n"
 
 [http_service]
   internal_port = 5678
